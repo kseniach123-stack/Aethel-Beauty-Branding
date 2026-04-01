@@ -1,6 +1,6 @@
 # Aethel — React (Vite + TypeScript)
 
-Luxury skincare landing: responsive layout, side menu, scroll-in sections, newsletter validation, routing (`/` and `/cart`).
+Luxury skincare landing built with React + TypeScript: responsive layout, side menu, cart drawer, scroll-in sections, and newsletter validation.
 
 ## Scripts
 

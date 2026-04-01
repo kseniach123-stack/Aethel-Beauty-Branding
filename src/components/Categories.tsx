@@ -1,15 +1,17 @@
+const categories: Array<{ id: string; className: string; label: string }> = [
+  { id: 'face', className: 'facecare', label: 'Face' },
+  { id: 'body', className: 'bodycare', label: 'Body' },
+  { id: 'hair', className: 'haircare', label: 'Hair' },
+]
+
 export function Categories() {
   return (
     <section id="products" className="container category-grid">
-      <a href="#" className="category-card facecare">
-        <h3 style={{ fontFamily: 'var(--font-heading)' }}>Face</h3>
-      </a>
-      <a href="#" className="category-card bodycare">
-        <h3 style={{ fontFamily: 'var(--font-heading)' }}>Body</h3>
-      </a>
-      <a href="#" className="category-card haircare">
-        <h3 style={{ fontFamily: 'var(--font-heading)' }}>Hair</h3>
-      </a>
+      {categories.map((category) => (
+        <a key={category.id} href="#" className={`category-card ${category.className}`}>
+          <h3 style={{ fontFamily: 'var(--font-heading)' }}>{category.label}</h3>
+        </a>
+      ))}
     </section>
   )
 }

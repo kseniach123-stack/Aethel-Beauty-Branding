@@ -19,13 +19,76 @@
     }
 
     .sidebar {
-        width: 100%;
-        left: -100%;
+        width: min(320px, 86vw);
+        left: 0;
     }
 
     .menu-toggle {
         top: 25px;
         left: 20px;
+    }
+
+    .cart-sidebar {
+        width: min(340px, 88vw);
+        max-width: 88vw;
+        padding: 22px 18px;
+        top: 0;
+        height: 100vh;
+    }
+
+    .cart-actions {
+        flex-direction: column;
+        bottom: 20px;
+        padding: 0 18px;
+    }
+
+    .cart-btn {
+        width: 100%;
+    }
+
+    .about-section {
+        max-width: 92vw;
+        padding: 36px 12px 28px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+
+    .about-section p {
+        font-size: 0.92rem;
+        line-height: 1.75;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sidebar {
+        width: min(360px, 58vw);
+        left: 0;
+    }
+
+    .cart-sidebar {
+        width: min(380px, 60vw);
+        max-width: 60vw;
+    }
+
+    .about-section {
+        max-width: 86vw;
+        padding: 48px 24px 34px;
+        text-align: center;
+    }
+
+    .about-section h2 {
+        font-size: 1.85rem;
+        margin-bottom: 14px;
+    }
+
+    .about-section p {
+        font-size: 0.98rem;
+        line-height: 1.8;
     }
 }
 
